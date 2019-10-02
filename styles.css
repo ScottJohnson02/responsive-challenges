@@ -32,6 +32,7 @@ aside {
   color: #eee;
 }
 
+
 /**
  * EXERCISE 1:
  * Try to make a right sidebar layout only when the screen
@@ -39,6 +40,14 @@ aside {
  * smaller screen sizes.
  */
 /* @media <condition?> {} */
+
+@media screen and (min-width: 750px){
+  main{
+    display: flex;
+    flex-direction: row;
+
+  }
+}
 
 
 /**
@@ -48,6 +57,19 @@ aside {
  */
 /* @media <condition?> {} */
 
+@media screen and (min-width: 900px){
+  .sidebar
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+  li{
+    width: 50%;
+  }
+
+}
+
 
 /**
  * EXERCISE 3:
@@ -56,6 +78,10 @@ aside {
  * a media query for this?
  */
 /* ??? */
+main.container{
+  max-width: 1000px;
+
+}
 
 
 /**
@@ -65,6 +91,14 @@ aside {
  * width.
  */
 /* @media <condition?> {} */
+@media screen and (max-width: 500px){
+  body{
+    padding:0;
+
+  }
+
+}
+
 
 
 /**
@@ -73,6 +107,11 @@ aside {
  * 810px, rotate the contents of the entire page upside down.
  */
 /* @media <condition?> {} */
+@media screen and (min-width: 800px) and (max-width: 810;){
+  html {
+    
+  }
+}
 
 
 /**
@@ -82,4 +121,3 @@ aside {
  * blue. Mwahahaha!
  */
 /* @media <condition?> {} */
-
